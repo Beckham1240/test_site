@@ -7,3 +7,7 @@ p{
     font-size: 2em;
     padding-left: 20px;
 }
+
+article a{
+    color: orangered;
+}
