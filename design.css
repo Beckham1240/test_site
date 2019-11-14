@@ -21,7 +21,7 @@ Date: 11/3/19
 }
 
 html{
-    background-color: gray;
+    background: linear-gradient(900deg,black 20%, white);
 }
 
 body{

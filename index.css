@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/*Imported Design*/
+@import url(design.css);
+
+article{
+    margin-top: 80px;
+}
+
+p{
+    font-size: 3.3em;
+    padding-left: 30px;
+}
+
