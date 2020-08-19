@@ -30,7 +30,7 @@ body{
     box-shadow: 10px 10px 200px rgb(51,51,51),
                 -10px 10px 200px rgb(51,51,51);
     background: black;
-    height: 1000px;
+    height: auto;
 }
 
 section.row::after {
@@ -58,7 +58,7 @@ h1:nth-of-type(4)::after{
 }
 
 nav{
-    width: 80%;
+    width: 75%;
 }
 
 nav a{
@@ -102,9 +102,7 @@ article ul{
     margin-left: 20px;
 }
 
-img{
-    float: left;
-}
+
 
 img#css{
     position: absolute;
@@ -113,10 +111,24 @@ img#css{
 }
 
 article{
-    width: 500px;
+    width: 600px;
     color: rgb(189, 50, 0);
     font-family: Article;
     font-size: 1.4em;
+    border-style: solid;
+    border-color: rgb(189, 50, 0);
+    margin-left: 60px;
+    border-radius: 75px;
+    box-shadow: 10px 10px 10px rgb(189, 50, 0),
+                -10px -10px 10px rgb(189, 50, 0);
+    margin-top: 15px;
+}
+
+div{
+    width: 500px;
+    color: rgb(189, 50, 0);
+    font-family: Article;
+    font-size: 2.2em;
     border-style: solid;
     border-color: rgb(189, 50, 0);
     margin-left: 50px;
@@ -124,6 +136,17 @@ article{
     box-shadow: 10px 10px 10px rgb(189, 50, 0),
                 -10px -10px 10px rgb(189, 50, 0);
     margin-top: 15px;
+}
+
+footer{
+    margin-top: 19.5%;
+    font-family: Article;
+    background-color: rgb(189, 50, 0);
+    height:3.5%;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 section.col-2-3{
