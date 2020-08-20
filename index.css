@@ -3,10 +3,12 @@
 /*Imported Design*/
 @import url(design.css);
 
+/*pushes down the article some*/
 article{
     margin-top: 80px;
 }
 
+/*Pushes the paragraph to the right some*/
 p{
     font-size: 3.3em;
     padding-left: 30px;

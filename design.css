@@ -6,6 +6,8 @@ Author: Beckham Le
 Date: 11/3/19
 
 */
+
+/*Font Styles*/
 @font-face{
     font-family: Title;
     src: url(CARIC.ttf) format('truetype'),
@@ -20,6 +22,7 @@ Date: 11/3/19
     url(article.woff2) format('woff2');
 }
 
+/*Main Page Styles/Structure*/
 html{
     background: linear-gradient(900deg,black 20%, white);
 }
@@ -30,17 +33,11 @@ body{
     box-shadow: 10px 10px 200px rgb(51,51,51),
                 -10px 10px 200px rgb(51,51,51);
     background: black;
-    height: 830px;
-}
-
-section.row::after {
-    content: "";
-    display: table;
-    clear: both;
+    height: auto;
 }
 
 header{
-    background: linear-gradient(60deg, black 30%, rgb(189, 50, 0));
+    background: linear-gradient(75deg, rgb(189, 50, 0), black 55%);
 }
 
 h1{
@@ -57,33 +54,6 @@ h1:nth-of-type(4)::after{
     color: black;
 }
 
-nav a{
-    color: black;
-    text-decoration: none;
-    font-size: 1.2em;
-    font-family: Title;
-}
-
-nav ul{
-    background-color: rgb(189, 50, 0);
-    display: -webkit-flex-box;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-}
-
-nav ul li{
-    display: block;
-    justify-content: center;
-    padding: 5px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-nav a:active, nav a:hover{
-    text-shadow: rgb(36, 35, 35) 2px 5px 8px;
-}
-
 h2{
     color: rgb(189, 50, 0);
     font-size: 4.5em;
@@ -97,21 +67,12 @@ article ul{
     margin-left: 20px;
 }
 
-img{
-    float: left;
-}
-
-img#css{
-    position: absolute;
-    right: 17%;
-    bottom: -20px;
-}
-
+/*Makes the article section into a curved box with colored outlining*/
 article{
     width: 600px;
     color: rgb(189, 50, 0);
     font-family: Article;
-    font-size: 1.5em;
+    font-size: 1.4em;
     border-style: solid;
     border-color: rgb(189, 50, 0);
     margin-left: 60px;
@@ -121,6 +82,84 @@ article{
     margin-top: 15px;
 }
 
+/*Same thing as article styles but tailored for the "About" tab, which splits the page evenly*/
+div{
+    width: 500px;
+    color: rgb(189, 50, 0);
+    font-family: Article;
+    font-size: 2.2em;
+    border-style: solid;
+    border-color: rgb(189, 50, 0);
+    margin-left: 50px;
+    border-radius: 75px;
+    box-shadow: 10px 10px 10px rgb(189, 50, 0),
+                -10px -10px 10px rgb(189, 50, 0);
+    margin-top: 15px;
+}
+
+footer{
+    margin-top: 19.5%;
+    font-family: Article;
+    background-color: rgb(189, 50, 0);
+    height:3.5%;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+/*Navigation Bar Styles*/
+/*Sets the length of the nav bar*/
+nav{
+    width: 75%;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.45em;
+    font-family: Title;
+}
+
+/*Curves the side of the nav bar and organizes the tabs*/
+nav ul{
+    background-color: rgb(189, 50, 0);
+    display: -webkit-flex-box;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    border-radius: 30px;
+}
+
+/*Makes the tabs displayed as blocks and evens them out to make them look nice*/
+nav ul li{
+    display: block;
+    justify-content: center;
+    padding: 17px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*When hovered a shadow will appear behind/under the text*/
+nav a:active, nav a:hover{
+    text-shadow: rgb(36, 35, 35) 2px 5px 8px;
+}
+
+/*Image Styles*/
+img#css{
+    position: absolute;
+    right: 17%;
+    bottom: -20px;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+img#html5{
+    margin-top: 20%;
+}
+
+/*Section Styles*/
+/*Changes the size of the sections to wahtever size to fit all content evenly*/
 section.col-2-3{
     width: 67%;
 }
@@ -129,7 +168,18 @@ section.col-1-3{
     width: 33%;
 }
 
+section.col-1-2{
+    width: 50%;
+}
+
 section[class^="col-"]{
     float:left;
     box-sizing: border-box;
+}
+
+/*Clears all floats*/
+section.row::after {
+    content: "";
+    display: table;
+    clear: both;
 }
