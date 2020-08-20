@@ -6,6 +6,8 @@ Author: Beckham Le
 Date: 11/3/19
 
 */
+
+/*Font Styles*/
 @font-face{
     font-family: Title;
     src: url(CARIC.ttf) format('truetype'),
@@ -20,6 +22,7 @@ Date: 11/3/19
     url(article.woff2) format('woff2');
 }
 
+/*Main Page Styles/Structure*/
 html{
     background: linear-gradient(900deg,black 20%, white);
 }
@@ -31,12 +34,6 @@ body{
                 -10px 10px 200px rgb(51,51,51);
     background: black;
     height: auto;
-}
-
-section.row::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 header{
@@ -57,38 +54,6 @@ h1:nth-of-type(4)::after{
     color: black;
 }
 
-nav{
-    width: 75%;
-}
-
-nav a{
-    color: black;
-    text-decoration: none;
-    font-size: 1.45em;
-    font-family: Title;
-}
-
-nav ul{
-    background-color: rgb(189, 50, 0);
-    display: -webkit-flex-box;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    border-radius: 30px;
-}
-
-nav ul li{
-    display: block;
-    justify-content: center;
-    padding: 17px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-nav a:active, nav a:hover{
-    text-shadow: rgb(36, 35, 35) 2px 5px 8px;
-}
-
 h2{
     color: rgb(189, 50, 0);
     font-size: 4.5em;
@@ -102,14 +67,7 @@ article ul{
     margin-left: 20px;
 }
 
-
-
-img#css{
-    position: absolute;
-    right: 17%;
-    bottom: -20px;
-}
-
+/*Makes the article section into a curved box with colored outlining*/
 article{
     width: 600px;
     color: rgb(189, 50, 0);
@@ -124,6 +82,7 @@ article{
     margin-top: 15px;
 }
 
+/*Same thing as article styles but tailored for the "About" tab, which splits the page evenly*/
 div{
     width: 500px;
     color: rgb(189, 50, 0);
@@ -149,6 +108,58 @@ footer{
     padding-bottom: 5px;
 }
 
+/*Navigation Bar Styles*/
+/*Sets the length of the nav bar*/
+nav{
+    width: 75%;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.45em;
+    font-family: Title;
+}
+
+/*Curves the side of the nav bar and organizes the tabs*/
+nav ul{
+    background-color: rgb(189, 50, 0);
+    display: -webkit-flex-box;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    border-radius: 30px;
+}
+
+/*Makes the tabs displayed as blocks and evens them out to make them look nice*/
+nav ul li{
+    display: block;
+    justify-content: center;
+    padding: 17px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*When hovered a shadow will appear behind/under the text*/
+nav a:active, nav a:hover{
+    text-shadow: rgb(36, 35, 35) 2px 5px 8px;
+}
+
+/*Image Styles*/
+img#css{
+    position: absolute;
+    right: 17%;
+    bottom: -20px;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+img#html5{
+    margin-top: 20%;
+}
+
+/*Section Styles*/
+/*Changes the size of the sections to wahtever size to fit all content evenly*/
 section.col-2-3{
     width: 67%;
 }
@@ -164,4 +175,11 @@ section.col-1-2{
 section[class^="col-"]{
     float:left;
     box-sizing: border-box;
+}
+
+/*Clears all floats*/
+section.row::after {
+    content: "";
+    display: table;
+    clear: both;
 }

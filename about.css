@@ -11,6 +11,7 @@ section.col-1-2{
     margin-top: 1%;
 }
 
+/*Adds space between the list items*/
 div li{
     padding-bottom: 15px;
 }
